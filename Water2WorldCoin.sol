@@ -103,7 +103,7 @@ contract Water2WorldCoin is StandardToken { // CHANGE THIS. Update the contract 
     address public fundsWallet;         // Where should the raised ETH go?
      // Token release switch
     bool public released = false;
-    uint public deadline;
+    uint public deadline;   // Deadline
 
 
 
@@ -117,7 +117,7 @@ contract Water2WorldCoin is StandardToken { // CHANGE THIS. Update the contract 
         symbol = "WTWC";                                             // Set the symbol for display purposes (CHANGE THIS)
         unitsOneEthCanBuy = 10;                                      // Set the price of your token for the ICO (CHANGE THIS)
         fundsWallet = msg.sender;                                    // The owner of the contract gets ETH
-        deadline = now + 10 minutes;
+        deadline = now + 10 minutes;                                 // Deadline
 
     }
 
